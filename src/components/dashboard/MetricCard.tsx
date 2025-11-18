@@ -1,10 +1,11 @@
 import React from 'react';
 import { SkeletonLoader } from '@/components/ui/SkeletonLoader';
+import { LucideIcon } from 'lucide-react';
 
 interface MetricCardProps {
   title: string;
   value: number | string;
-  icon: React.ComponentType<{ size?: number; className?: string }>;
+  icon: LucideIcon;
   loading?: boolean;
   trend?: {
     value: number;

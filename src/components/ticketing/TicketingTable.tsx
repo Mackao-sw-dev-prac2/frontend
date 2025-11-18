@@ -26,9 +26,9 @@ export const TicketingTable: React.FC<TicketingTableProps> = ({
     ...(isAdmin
       ? [
           {
-            key: 'user',
+            key: 'user' as keyof TicketingRequest,
             label: 'User',
-            render: (ticketing) => {
+            render: (ticketing: TicketingRequest) => {
               const user = typeof ticketing.user === 'object' ? ticketing.user : null;
               return user ? (
                 <div>
@@ -77,10 +77,7 @@ export const TicketingTable: React.FC<TicketingTableProps> = ({
           <Button
             variant="secondary"
             size="sm"
-            onClick={(e) => {
-              e.stopPropagation();
-              onEdit(ticketing);
-            }}
+            onClick={() => onEdit(ticketing)}
           >
             <Edit size={14} className="mr-1" />
             Edit
@@ -88,10 +85,7 @@ export const TicketingTable: React.FC<TicketingTableProps> = ({
           <Button
             variant="danger"
             size="sm"
-            onClick={(e) => {
-              e.stopPropagation();
-              onDelete(ticketing);
-            }}
+            onClick={() => onDelete(ticketing)}
           >
             <Trash2 size={14} className="mr-1" />
             Delete

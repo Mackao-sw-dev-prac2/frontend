@@ -64,7 +64,9 @@ export default function EventsPage() {
     <div>
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold text-gray-900">Events Management</h1>
-        <Button onClick={() => router.push('/admin/events/create')}>
+        <Button 
+        className='flex items-center '
+        onClick={() => router.push('/admin/events/create')}>
           <Plus size={20} className="mr-2" />
           Create Event
         </Button>
@@ -92,7 +94,7 @@ export default function EventsPage() {
             <strong>{eventToDelete?.name}</strong>? This action cannot be undone.
           </p>
           <div className="flex space-x-4">
-            <Button variant="danger" onClick={handleDeleteConfirm} className="flex-1">
+            <Button variant="danger" onClick={handleDeleteConfirm} className="flex items-center">
               <Trash2 size={16} className="mr-2" />
               Delete
             </Button>

@@ -55,28 +55,22 @@ export const EventTable: React.FC<EventTableProps> = ({
       key: 'actions',
       label: 'Actions',
       render: (event) => (
-        <div className="flex space-x-2">
+        <div className="flex space-x-2 ">
           <Button
             variant="secondary"
             size="sm"
-            onClick={(e) => {
-              e.stopPropagation();
-              onEdit(event);
-            }}
+            onClick={() => onEdit(event)}
           >
-            <Edit size={14} className="mr-1" />
-            Edit
+            <Edit size={20} className="mr-1" />
+            
           </Button>
           <Button
             variant="danger"
             size="sm"
-            onClick={(e) => {
-              e.stopPropagation();
-              onDelete(event);
-            }}
+            onClick={() => onDelete(event)}
           >
-            <Trash2 size={14} className="mr-1" />
-            Delete
+            <Trash2 size={20} className="mr-1 " />
+            
           </Button>
         </div>
       ),
