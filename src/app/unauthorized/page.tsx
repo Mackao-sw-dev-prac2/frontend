@@ -9,7 +9,7 @@ export default function UnauthorizedPage() {
         <AlertCircle size={64} className="mx-auto text-danger-600 mb-4" />
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Access Denied</h1>
         <p className="text-gray-600 mb-6">
-          You don't have permission to access this page.
+          You don&apos;t have permission to access this page.
         </p>
         <div className="space-x-4">
           <Link href="/">
@@ -23,4 +23,3 @@ export default function UnauthorizedPage() {
     </div>
   );
 }
-

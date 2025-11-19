@@ -150,7 +150,7 @@ export default function AdminSettingsPage() {
               <div className="pt-4 border-t">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">Change Password</h3>
                 <p className="text-sm text-gray-500 mb-4">
-                  Leave blank if you don't want to change your password
+                  Leave blank if you don&apos;t want to change your password
                 </p>
 
                 <div className="space-y-4">
@@ -187,11 +187,10 @@ export default function AdminSettingsPage() {
 
             {message && (
               <div
-                className={`p-4 rounded-lg ${
-                  message.includes('success')
+                className={`p-4 rounded-lg ${message.includes('success')
                     ? 'bg-green-50 border border-green-200 text-green-800'
                     : 'bg-red-50 border border-red-200 text-red-800'
-                }`}
+                  }`}
               >
                 <p className="font-medium">{message}</p>
               </div>

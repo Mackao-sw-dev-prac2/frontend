@@ -51,7 +51,7 @@ export default function MemberDashboard() {
     <div>
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900">Welcome back {user?.name}!</h1>
-        <p className="text-gray-600 mt-2">Here's an overview of your ticketing activity.</p>
+        <p className="text-gray-600 mt-2">Here&apos;s an overview of your ticketing activity.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">

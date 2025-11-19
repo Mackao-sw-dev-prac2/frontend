@@ -147,7 +147,7 @@ export default function TicketVerificationPage() {
                         {/* Upload QR Code Image */}
                         <div className="bg-white rounded-lg shadow-lg p-6">
                             <h2 className="text-lg font-semibold text-gray-900 mb-4">Scan QR Code from Image</h2>
-                            <p className="text-gray-600 mb-4">Upload a photo of the member's QR code</p>
+                            <p className="text-gray-600 mb-4">Upload a photo of the member&apos;s QR code</p>
 
                             <input
                                 ref={fileInputRef}

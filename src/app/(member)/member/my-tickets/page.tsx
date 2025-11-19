@@ -101,7 +101,7 @@ export default function MyTicketsPage() {
         {tickets.length === 0 ? (
           <div className="text-center py-12 bg-white rounded-lg shadow">
             <h3 className="text-lg font-medium text-gray-900 mb-2">No tickets found</h3>
-            <p className="text-gray-500 mb-6">You haven't booked any events yet.</p>
+            <p className="text-gray-500 mb-6">You haven&apos;t booked any events yet.</p>
             <Link href="/member/events">
               <Button>Browse Events</Button>
             </Link>
