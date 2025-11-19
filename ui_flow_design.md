@@ -436,5 +436,3 @@ graph TB
 - **Real-time Updates**: Dashboard shows live ticket counts and activity
 
 ---
-
-*Generated: 2025-11-19*
